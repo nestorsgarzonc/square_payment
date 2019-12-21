@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   _payment() async {
-    await InAppPayments.setSquareApplicationId("sq0idp-9u4EuGb6uWAqm8yPBbriNA");
+    await InAppPayments.setSquareApplicationId("sandbox-sq0idb-NI9cnFXBSrYgbToUJlp9HA");
     await InAppPayments.startCardEntryFlow(
       onCardEntryCancel: () {},
       onCardNonceRequestSuccess: (CardDetails result) async {

@@ -1,8 +1,4 @@
 const functions = require('firebase-functions');
-
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+exports.nonce=function.https.onRequest(async(req, res)=>{
+    return res.statusCode(200).json('Bearer EAAAEMX5NYyuIIRSJutuPb0dyD5acCsyK527VVwiH5XNBBkryTHfm1aVZFLRFniS');
+})
